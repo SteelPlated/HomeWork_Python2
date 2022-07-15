@@ -16,5 +16,5 @@ y = int(input('Вклад в будущем: '))
 count=0
 while x<y:
     count=count+1
-    x= x*(1+p/100)
+    x= int (x*(1+p/100))
 print(count, 'лет понадобится')

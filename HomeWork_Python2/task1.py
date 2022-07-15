@@ -6,10 +6,11 @@
 6782 -> 23
 0,56 -> 11'''
 
-n=int(input('Введите число: '))
+n=(input('Введите число: '))
 sum = 0
-while(n > 0):
-    a = n % 10
-    sum = sum + a
-    n = n//10
+i=len(n)-1
+while i>=0:
+    if n[i]!='.':
+        sum=sum+int(n[i])
+    i=i-1
 print("Сумма равна:", sum)
